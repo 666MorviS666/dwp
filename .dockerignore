@@ -1,0 +1,32 @@
+# Контекст сборки уезжает демону Docker целиком, поэтому 3.3 ГБ сырых
+# матчей отсюда надо убрать в первую очередь: без этой строки `docker build`
+# минутами копирует данные, которые в образе не нужны — рабочие каталоги
+# подключаются томами (см. docker-compose.yml).
+data/matches/
+data/synthetic/
+data/live_log/
+data/blind/
+data/stratz/
+data/matchups/
+data/assets/
+data/export_frames.csv.gz
+data/export_extras.csv.gz
+data/holdout_preds.npz
+data/comeback_rows.csv
+
+.git/
+.gitignore
+.github/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.log
+Снимок экрана*.png
+Screenshot*.png
+Dockerfile
+.dockerignore
+docker-compose.yml

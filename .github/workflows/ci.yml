@@ -1,0 +1,54 @@
+name: проверки
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      # esprima ставится сверх requirements: без неё раздел 8 в
+      # test_web_snapshot честно пишет, что синтаксис страницы не проверен,
+      # — а в CI это единственное место, где он вообще проверяется.
+      - name: зависимости
+        run: pip install -r dwp/requirements.txt esprima
+
+      # Синтетика нужна именно затем, чтобы у сигнала была ИЗВЕСТНАЯ истинная
+      # величина: иначе нельзя отличить «модель плохая» от «код сломан».
+      # Сети не требует, ~14 секунд на обе модели.
+      - name: синтетика и обучение
+        run: |
+          python -m dwp.synthetic
+          python -m dwp.train
+
+      # Проверки, которым не нужны ни сеть, ни выгрузка data/matches
+      # (её в репозитории нет — см. DEPLOY.md). Сквозные test_web_snapshot,
+      # test_live_replay и test_builds гоняйте локально: они читают матчи.
+      - name: офлайн-проверки
+        run: |
+          python -m dwp.test_map_geometry
+          python -m dwp.test_collect_fake
+          python -m dwp.test_killfeed
+          python -m dwp.test_forecast
+          python -m dwp.test_verdict
+          python -m dwp.test_live_fixture
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Собираем образ, но не запускаем: без ключа Steam панель поднимется и
+      # напишет, чего ей не хватает, — проверять тут нечего, а вот что
+      # Dockerfile вообще собирается, знать полезно.
+      - name: сборка образа
+        run: docker build -t dwp:ci .

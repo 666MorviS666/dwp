@@ -1,0 +1,28 @@
+# Запуск: cp .env.example .env, вписать STEAM_API_KEY, затем
+#   docker compose up -d --build      панель на http://localhost:8765/
+#   docker compose logs -f            смотреть, что она делает
+#   docker compose down               остановить
+
+services:
+  dwp:
+    build: .
+    container_name: dwp
+    ports:
+      # Наружу — только на локальный адрес. Панель не спрашивает пароля, и
+      # выставлять её в сеть значит отдать всем кнопки «скачать матчи» и
+      # «переобучить всё» вместе со своим ключом Steam.
+      - "127.0.0.1:8765:8765"
+    environment:
+      # Значения берутся из .env рядом с этим файлом. Подстановка ${X:-} не
+      # падает, если .env нет: панель поднимется и сама объяснит, чего ей не
+      # хватает, — это лучше, чем отказ запуска без объяснений.
+      STEAM_API_KEY: ${STEAM_API_KEY:-}
+      STRATZ_TOKEN: ${STRATZ_TOKEN:-}
+      OPENDOTA_API_KEY: ${OPENDOTA_API_KEY:-}
+    volumes:
+      # Данные и модели — томами, а не в образе: лайв-логи и скачанные
+      # матчи должны пережить пересборку, иначе каждая правка кода стирает
+      # историю точности.
+      - ./data:/app/data
+      - ./models:/app/models
+    restart: unless-stopped

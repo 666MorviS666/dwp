@@ -1,0 +1,5 @@
+ts,match_id,server_steam_id,game_state,game_time,p,minute,gold_adv,gold_adv_d1,gold_adv_slope5,radiant_towers_lost,dire_towers_lost,tower_adv,rax_adv,draft_logit,kills_adv,kills_adv_d5,nw_top_adv,nw_conc_adv,radiant_t3_lost,dire_t3_lost,t3_adv,level_adv,lh_adv,dn_adv,gold_adv_norm,gold_adv_norm_slope5,graph_gold_last,graph_gold_len,nw_adv,nw_total,team_id_radiant,team_id_dire,p_stratz,stratz_time,model
+1786725993,8945494916,90290932466895901,5,705,0.471988,11.75,2224,,,0,0,0,0,-0.333098,3,,774,0.00888255,0,0,0,1,-58,3,0.0580194,,2175,128,2224,38332,,,,,live_exact.pkl
+1786726009,8945494916,90290932466895901,5,722,0.471988,12.0333,2065,,,0,0,0,0,-0.333098,2,,917,0.0182633,0,0,0,1,-52,3,0.0524311,,1800,128,2065,39385,,,,,live_exact.pkl
+1786726025,8945494916,90290932466895901,5,738,0.471988,12.3,2434,,,0,0,0,0,-0.333098,4,,969,0.0149887,0,0,0,1,-59,3,0.0594645,,2081,128,2434,40932,,,,,live_exact.pkl
+1786726042,8945494916,90290932466895901,5,754,0.495043,12.5667,3439,,,0,1,1,0,-0.333098,4,,1169,0.0110348,0,0,0,2,-54,4,0.0814331,,2482,128,3439,42231,,,,,live_exact.pkl

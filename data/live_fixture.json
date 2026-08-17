@@ -1,0 +1,447 @@
+{
+  "match": {
+    "server_steam_id": "90290402786683905",
+    "match_id": "8123456789",
+    "timestamp": 1700000000,
+    "game_time": 1500,
+    "game_mode": 2,
+    "league_id": 0,
+    "game_state": 5,
+    "picks": [],
+    "bans": [],
+    "lobby_type": 1,
+    "start_timestamp": 1700000000
+  },
+  "teams": [
+    {
+      "team_number": 2,
+      "team_id": 0,
+      "team_name": "R",
+      "team_tag": "R",
+      "score": 10,
+      "net_worth": 32000,
+      "players": [
+        {
+          "accountid": 1,
+          "playerid": 0,
+          "name": "p",
+          "team": 2,
+          "heroid": 1,
+          "level": 10,
+          "gold": 500,
+          "kill_count": 3,
+          "death_count": 2,
+          "assists_count": 4,
+          "net_worth": 9600,
+          "team_slot": 0
+        },
+        {
+          "accountid": 1,
+          "playerid": 1,
+          "name": "p",
+          "team": 2,
+          "heroid": 2,
+          "level": 10,
+          "gold": 500,
+          "kill_count": 2,
+          "death_count": 2,
+          "assists_count": 4,
+          "net_worth": 8160,
+          "team_slot": 1
+        },
+        {
+          "accountid": 1,
+          "playerid": 2,
+          "name": "p",
+          "team": 2,
+          "heroid": 3,
+          "level": 10,
+          "gold": 500,
+          "kill_count": 1,
+          "death_count": 2,
+          "assists_count": 4,
+          "net_worth": 6720,
+          "team_slot": 2
+        },
+        {
+          "accountid": 1,
+          "playerid": 3,
+          "name": "p",
+          "team": 2,
+          "heroid": 4,
+          "level": 10,
+          "gold": 500,
+          "kill_count": 3,
+          "death_count": 2,
+          "assists_count": 4,
+          "net_worth": 5279,
+          "team_slot": 3
+        },
+        {
+          "accountid": 1,
+          "playerid": 4,
+          "name": "p",
+          "team": 2,
+          "heroid": 5,
+          "level": 10,
+          "gold": 500,
+          "kill_count": 2,
+          "death_count": 2,
+          "assists_count": 4,
+          "net_worth": 3840,
+          "team_slot": 4
+        }
+      ]
+    },
+    {
+      "team_number": 3,
+      "team_id": 0,
+      "team_name": "D",
+      "team_tag": "D",
+      "score": 8,
+      "net_worth": 25000,
+      "players": [
+        {
+          "accountid": 2,
+          "playerid": 5,
+          "name": "q",
+          "team": 3,
+          "heroid": 6,
+          "level": 10,
+          "gold": 400,
+          "kill_count": 1,
+          "death_count": 3,
+          "assists_count": 2,
+          "net_worth": 5500,
+          "team_slot": 0
+        },
+        {
+          "accountid": 2,
+          "playerid": 6,
+          "name": "q",
+          "team": 3,
+          "heroid": 7,
+          "level": 10,
+          "gold": 400,
+          "kill_count": 2,
+          "death_count": 3,
+          "assists_count": 2,
+          "net_worth": 5250,
+          "team_slot": 1
+        },
+        {
+          "accountid": 2,
+          "playerid": 7,
+          "name": "q",
+          "team": 3,
+          "heroid": 8,
+          "level": 10,
+          "gold": 400,
+          "kill_count": 1,
+          "death_count": 3,
+          "assists_count": 2,
+          "net_worth": 5000,
+          "team_slot": 2
+        },
+        {
+          "accountid": 2,
+          "playerid": 8,
+          "name": "q",
+          "team": 3,
+          "heroid": 9,
+          "level": 10,
+          "gold": 400,
+          "kill_count": 2,
+          "death_count": 3,
+          "assists_count": 2,
+          "net_worth": 4750,
+          "team_slot": 3
+        },
+        {
+          "accountid": 2,
+          "playerid": 9,
+          "name": "q",
+          "team": 3,
+          "heroid": 10,
+          "level": 10,
+          "gold": 400,
+          "kill_count": 1,
+          "death_count": 3,
+          "assists_count": 2,
+          "net_worth": 4500,
+          "team_slot": 4
+        }
+      ]
+    }
+  ],
+  "buildings": [
+    {
+      "team": 0,
+      "type": 0,
+      "lane": 0,
+      "tier": 0,
+      "x": 0,
+      "y": 0,
+      "destroyed": true
+    },
+    {
+      "team": 0,
+      "type": 0,
+      "lane": 0,
+      "tier": 0,
+      "x": 0,
+      "y": 0,
+      "destroyed": true
+    },
+    {
+      "team": 0,
+      "type": 0,
+      "lane": 0,
+      "tier": 0,
+      "x": 0,
+      "y": 0,
+      "destroyed": true
+    },
+    {
+      "team": 0,
+      "type": 0,
+      "lane": 0,
+      "tier": 0,
+      "x": 0,
+      "y": 0,
+      "destroyed": true
+    },
+    {
+      "team": 2,
+      "type": 0,
+      "lane": 1,
+      "tier": 2,
+      "destroyed": false
+    },
+    {
+      "team": 2,
+      "type": 0,
+      "lane": 2,
+      "tier": 3,
+      "destroyed": false
+    },
+    {
+      "team": 2,
+      "type": 0,
+      "lane": 0,
+      "tier": 1,
+      "destroyed": false
+    },
+    {
+      "team": 2,
+      "type": 0,
+      "lane": 1,
+      "tier": 2,
+      "destroyed": false
+    },
+    {
+      "team": 2,
+      "type": 0,
+      "lane": 2,
+      "tier": 3,
+      "destroyed": false
+    },
+    {
+      "team": 2,
+      "type": 0,
+      "lane": 0,
+      "tier": 1,
+      "destroyed": false
+    },
+    {
+      "team": 2,
+      "type": 0,
+      "lane": 1,
+      "tier": 2,
+      "destroyed": false
+    },
+    {
+      "team": 2,
+      "type": 1,
+      "lane": 0,
+      "destroyed": false
+    },
+    {
+      "team": 2,
+      "type": 1,
+      "lane": 1,
+      "destroyed": false
+    },
+    {
+      "team": 2,
+      "type": 1,
+      "lane": 2,
+      "destroyed": false
+    },
+    {
+      "team": 2,
+      "type": 1,
+      "lane": 0,
+      "destroyed": false
+    },
+    {
+      "team": 2,
+      "type": 1,
+      "lane": 1,
+      "destroyed": false
+    },
+    {
+      "team": 2,
+      "type": 1,
+      "lane": 2,
+      "destroyed": false
+    },
+    {
+      "team": 2,
+      "type": 2,
+      "lane": 0,
+      "destroyed": false
+    },
+    {
+      "team": 0,
+      "type": 0,
+      "lane": 0,
+      "tier": 0,
+      "x": 0,
+      "y": 0,
+      "destroyed": true
+    },
+    {
+      "team": 0,
+      "type": 0,
+      "lane": 0,
+      "tier": 0,
+      "x": 0,
+      "y": 0,
+      "destroyed": true
+    },
+    {
+      "team": 0,
+      "type": 0,
+      "lane": 0,
+      "tier": 0,
+      "x": 0,
+      "y": 0,
+      "destroyed": true
+    },
+    {
+      "team": 0,
+      "type": 0,
+      "lane": 0,
+      "tier": 0,
+      "x": 0,
+      "y": 0,
+      "destroyed": true
+    },
+    {
+      "team": 0,
+      "type": 0,
+      "lane": 0,
+      "tier": 0,
+      "x": 0,
+      "y": 0,
+      "destroyed": true
+    },
+    {
+      "team": 0,
+      "type": 0,
+      "lane": 0,
+      "tier": 0,
+      "x": 0,
+      "y": 0,
+      "destroyed": true
+    },
+    {
+      "team": 0,
+      "type": 0,
+      "lane": 0,
+      "tier": 0,
+      "x": 0,
+      "y": 0,
+      "destroyed": true
+    },
+    {
+      "team": 3,
+      "type": 0,
+      "lane": 1,
+      "tier": 2,
+      "destroyed": false
+    },
+    {
+      "team": 3,
+      "type": 0,
+      "lane": 2,
+      "tier": 3,
+      "destroyed": false
+    },
+    {
+      "team": 3,
+      "type": 0,
+      "lane": 0,
+      "tier": 1,
+      "destroyed": false
+    },
+    {
+      "team": 3,
+      "type": 0,
+      "lane": 1,
+      "tier": 2,
+      "destroyed": false
+    },
+    {
+      "team": 3,
+      "type": 1,
+      "lane": 0,
+      "destroyed": false
+    },
+    {
+      "team": 3,
+      "type": 1,
+      "lane": 1,
+      "destroyed": false
+    },
+    {
+      "team": 3,
+      "type": 1,
+      "lane": 2,
+      "destroyed": false
+    },
+    {
+      "team": 3,
+      "type": 1,
+      "lane": 0,
+      "destroyed": false
+    },
+    {
+      "team": 3,
+      "type": 1,
+      "lane": 1,
+      "destroyed": false
+    },
+    {
+      "team": 3,
+      "type": 1,
+      "lane": 2,
+      "destroyed": false
+    },
+    {
+      "team": 3,
+      "type": 2,
+      "lane": 0,
+      "destroyed": false
+    }
+  ],
+  "graph_data": {
+    "graph_gold": [
+      -43,
+      -50,
+      -671
+    ]
+  },
+  "delta_frame": true
+}
